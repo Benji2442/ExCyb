@@ -245,9 +245,6 @@ header {
 
 /* hamburger styles */
 #hamburger-btn {
-  position: absolute;
-  top: 268px;
-  right: 235px;
   z-index: 5;
   cursor: pointer;
   transition: left 1s ease-in-out;
@@ -378,7 +375,6 @@ header {
   color: #FFFFFF;
   margin-right: 10px; }
 
-/* media queries */
 /* menu styles */
 #overlay {
   height: 100vh;
