@@ -1,0 +1,22 @@
+/* hamburger styles */
+
+
+#hamburger-btn
+	z-index: 5
+	cursor: pointer
+	transition: left 1s ease-in-out
+	z-index: 1000
+	div
+		width: 35px
+		height: 2px
+		margin-bottom: 8px
+		background-color: #FFFFFF
+		transition: all 0.5s ease-in-out
+.isActive :nth-child(2)
+	opacity: 0
+.isActive	#top
+	transform: rotate(45deg)
+	transform-origin: 6px
+.isActive	#bottom
+	transform: rotate(-45deg)
+	transform-origin: 0px
