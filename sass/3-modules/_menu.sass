@@ -1,13 +1,38 @@
 /* menu styles */
 
-#menu
-	display: block
-	position: absolute
+#overlay
+	height: 100vh
+	width: 100vw
+	position: fixed
 	top: 0
 	left: 0
-	width: 500vh
-	height: 100vh
-	overflow: hidden
-	z-index: 998
-	transition: all 0.5s ease-in-out
-	// background-color: pink
+	z-index: 999
+	background-color: #1C142C
+	background-image: url('../../img/dots.png')
+	background-repeat: repeat-y
+
+#overlay-list
+	margin-top: 260px
+	height: 320px
+	.heading
+		font-size: 2rem
+
+.menu-link a
+	color: #FFFFFF
+	margin-bottom: 15px
+	&:hover
+		color: #CCCCCC
+
+.social
+	align-items: center
+	margin-bottom: 60px
+.icon
+	margin: 0 auto
+	width: 50px
+	height: 50px
+	border: #FFFFFF solid 1px
+	border-radius: 50%
+.fa
+	margin-top: 13px
+	font-size: 1.5rem
+	color: #FFFFFF

@@ -11,6 +11,31 @@
   </head>
   <body>
 
+		<section id="overlay" >
+			<div id="overlay-list">
+				<h1 class="heading menu-link"><a href="#">HOME</a></h1>
+				<h1 class="heading menu-link"><a href="#">OUR TEAM</a></h1>
+				<h1 class="heading menu-link"><a href="#">SERVICES</a></h1>
+				<h1 class="heading menu-link"><a href="#">NEWS</a></h1>
+				<h1 class="heading menu-link"><a href="#">CONTACTS</a></h1>
+			</div>
+			<div class="container">
+				<div class="row">
+					<a href="#" class="social col-sm-1 offset-md-5 offset-sm-4 col-lg-1 offset-lg-5">
+						<div class="icon">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</div>
+					</a>
+					<a href="https://twitter.com/excybtraining" class="social col-sm-1 offset-sm-1 offset-md-0 col-lg-1 offset-lg-0">
+						<div class="icon">
+							<i class="fa fa-twitter"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+
 	<div class="container-fluid" id="chain">
 
 
@@ -18,7 +43,7 @@
 			<div class="row align-items-center">
 				<img class="col-6 offset-3" id="logo" src="img/logo.png" alt="Logo">
 
-				<div class="col-1 offset-1" id="hamburger">
+				<div class="" id="hamburger">
 					<div id="hamburger-btn" class="">
 		        <div id='top'></div>
 		        <div id='middle'></div>
@@ -155,6 +180,18 @@
 		});
 	</script>
 
+	<script>
+			$( document ).ready(function() {
+			$('#overlay').hide();
+			$("#hamburger-btn").click(function() {
+			if($("#hamburger-btn").hasClass('isActive')){
+			    $("#overlay").show();
+			}else {
+			    $("#overlay").hide();
+			}
+		})
+	});
+	</script>
 
   </body>
 </html>
